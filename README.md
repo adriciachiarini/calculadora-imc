@@ -18,9 +18,10 @@ Este é um projeto simples de **Calculadora de IMC (Índice de Massa Corporal)**
 
 - HTML5  
 - CSS3  
-- JavaScript puro  
+- JavaScript   
 
 ---
+
 
 ## 📷 Demonstração
 
@@ -44,3 +45,6 @@ Este é um projeto simples de **Calculadora de IMC (Índice de Massa Corporal)**
 O **IMC (Índice de Massa Corporal)** é uma medida usada para avaliar se o peso de uma pessoa está adequado em relação à sua altura. Ele ajuda a identificar condições como **magreza, peso ideal, sobrepeso e obesidade**.
 
 
+## Você pode ver meu site em:
+
+https://adriciachiarini.github.io/calculadora-imc/
