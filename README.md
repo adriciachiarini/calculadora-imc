@@ -21,6 +21,9 @@ Este é um projeto simples de **Calculadora de IMC (Índice de Massa Corporal)**
 - JavaScript   
 
 ---
+## Você pode ver meu site em:
+
+https://adriciachiarini.github.io/calculadora-imc/
 
 ## 📷 Demonstração
 
