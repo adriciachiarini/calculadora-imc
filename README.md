@@ -18,7 +18,7 @@ Este é um projeto simples de **Calculadora de IMC (Índice de Massa Corporal)**
 
 - HTML5  
 - CSS3  
-- JavaScript puro  
+- JavaScript   
 
 ---
 
