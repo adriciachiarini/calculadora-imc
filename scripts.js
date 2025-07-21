@@ -7,8 +7,8 @@ const inputAltura = document.querySelector('.input-altura')
 
 function calculateIMC() {
     const peso = parseFloat(inputPeso.value.replace(',', '.'))
-    const altura = parseFloat(inputAltura.value.replace(',', '.'))
-    
+    const altura = parseFloat(inputAltura.value)
+
     if (isNaN(peso) || isNaN(altura) || altura === 0) {
         imcResult.innerHTML = 'Preencha os campos corretamente.'
         return
@@ -25,10 +25,11 @@ function limparCampos() {
     imcResult.innerHTML = ''
 }
 
+
 function formatarAltura(valor) {
     valor = valor.replace(/\D/g, '')
     if (valor.length >= 3) {
-        return valor.replace(/^0+/, '').slice(0, -2) + '.' + valor.slice(-2)  // ← ponto aqui!
+        return valor.replace(/^0+/, '').slice(0, -2) + '.' + valor.slice(-2)
     } else if (valor.length === 2) {
         return '0.' + valor
     } else {
@@ -36,14 +37,14 @@ function formatarAltura(valor) {
     }
 }
 
+
 function formatarPeso(valor) {
     valor = valor.replace(/\D/g, '')
-    if (valor.length >= 4) {
-        return valor.replace(/^0+/, '').slice(0, -1) + ',' + valor.slice(-1)
-    } else if (valor.length === 3) {
-        return valor[0] + ',' + valor.slice(1)
+
+    if (valor.length <= 2) {
+        return valor 
     } else {
-        return valor
+        return valor.slice(0, -1) + ',' + valor.slice(-1) 
     }
 }
 
@@ -56,6 +57,6 @@ inputPeso.addEventListener('input', function () {
     this.value = formatarPeso(this.value)
 })
 
-// Botões
+
 cleanButton.addEventListener('click', limparCampos)
 calculateButton.addEventListener('click', calculateIMC)
