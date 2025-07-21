@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Calcule seu IMC</title>
+</head>
+
+<body>
+  <img class="img" src="./assets/doctor.png" alt="Imagem de um médico" />
+
+  <div class="container">
+    <h1 class="titulo">Calculadora de IMC</h1>
+
+    <div>
+      <p>
+        O IMC (Índice de Massa Corporal) é uma medida usada para avaliar se o peso de uma pessoa está adequado em
+        relação à sua altura. Ele ajuda a identificar se alguém está abaixo do peso, com peso ideal, sobrepeso ou
+        obesidade.
+      </p>
+    </div>
+
+    <div>
+      <h2>Altura (ex.: 1,80)</h2>
+      <input class="input-altura" /> Metros
+      <button class="button-calc">Calcular</button>
+    </div>
+
+    <div>
+      <h2>Peso (ex.: 90,0)</h2>
+      <input class="input-peso" /> Quilos
+      <button class="button-clean">Limpar</button>
+    </div>
+
+    <div>
+      <h1 class="result">Seu IMC é:</h1>
+    </div>
+
+    <div>
+      <h2>Veja a interpretação do IMC</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>IMC</th>
+            <th>Classificação</th>
+            <th>Obesidade (grau)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Menor que 18,5</td>
+            <td>Magreza</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Entre 18,5 e 24,9</td>
+            <td>Normal</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Entre 25,0 e 29,9</td>
+            <td>Sobrepeso</td>
+            <td>I</td>
+          </tr>
+          <tr>
+            <td>Entre 30,0 e 39,9</td>
+            <td>Obesidade</td>
+            <td>II</td>
+          </tr>
+          <tr>
+            <td>Maior que 40,0</td>
+            <td>Obesidade Grave</td>
+            <td>III</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+
+</html>
